@@ -1,3 +1,257 @@
-h1 {
-  color: red;
+/* General*/
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+/*Home */
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.navbar-brand {
+  float: left;
+  color: #333;
+  font-size: 1.5em;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar-links {
+  float: right;
+}
+
+.navbar-links li {
+  float: left;
+  list-style: none;
+}
+
+.navbar-links a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+/*skills*/
+.skills {
+  padding: 20px;
+}
+
+.skill-chart {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill {
+  width: 150px;
+  height: 30px;
+  background-color: #eee;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 1em;
+}
+
+/*repeated?*/
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand a {
+  font-size: 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.navbar ul li a:hover {
+  background-color: #ffccf9;
+  /*color: #fff;*/
+  animation: colorChange 6s infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: #ffccf9;
+  }
+  25% {
+    background-color: #ccffcc;
+  }
+  50% {
+    background-color: #ffebcc;
+  }
+  75% {
+    background-color: #cce7ff;
+  }
+  100% {
+    background-color: #ffccf9;
+  }
+}
+
+/*home hero*/
+.hero {
+  position: relative;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ffccf9, #ccffcc, #ffebcc, #cce7ff);
+  background-size: 600% 600%;
+  animation: bgShift 20s infinite;
+  text-align: center;
+  padding: 50px 0;
+}
+
+#static-text {
+  font-family: "Manrope", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  font-size: 36px;
+}
+
+.typing-text {
+  font-family: "Manrope", sans-serif;
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+}
+
+@keyframes bgShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes moveDots {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px) rotate(15deg);
+  }
+  100% {
+    transform: translateY(100vh) rotate(-15deg);
+  }
+}
+
+.sparkle {
+  position: absolute;
+}
+
+.top-right {
+  top: 40px; /* Adjust margin from the top */
+  right: 40px; /* Adjust margin from the right */
+}
+
+.bottom-left {
+  bottom: 40px; /* Adjust margin from the bottom */
+  left: 40px; /* Adjust margin from the left */
+}
+
+.sparkle img {
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+}
+
+.contact,
+.projects,
+.resume,
+.skills {
+  padding: 10px;
+  padding-left: 20px;
+}
+
+/*contact*/
+.submit {
+  font-family: "Manrope", sans-serif;
+}
+
+/* Projects */
+
+.project-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /*display: flex; changes format to title on left of box and writing on right*/
+}
+
+.project-header {
+  justify-content: space-between;
+  align-items: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 5px 20px;
+  margin: -10px -20px 10px -20px;
+  display: flex;
+}
+
+.github-icon img {
+  width: 27px; /* Adjust icon size as needed */
+  height: 27px;
+  transition: transform 0.3s ease;
+}
+
+.github-icon a {
+  text-decoration: none; /* Remove underline from the link */
+}
+
+.github-icon img:hover {
+  transform: scale(1.3); /* Slightly enlarges the icon on hover */
+}
+
+#axle-project-header {
+  background-color: #ffccf9;
+}
+
+#BTT-project-header {
+  background-color: #ffebcc;
+}
+
+#blueprint-project-header {
+  background-color: #cce7ff;
+}
+
+#rendezvoo-project-header {
+  background-color: #ccffcc;
 }
