@@ -1,9 +1,9 @@
 const phrases = [
-  "Maya Patel",
-  "a CS student at Stevens Institute",
-  "an aspiring data visualizer",
-  "an avid learner",
-  "an innovator",
+  " Maya Patel",
+  " a CS student at Stevens Institute",
+  " an aspiring data visualizer",
+  " an avid learner",
+  " an innovator",
 ];
 
 let i = 0;

@@ -97,7 +97,7 @@ body {
 .navbar ul li a:hover {
   background-color: #ffccf9;
   /*color: #fff;*/
-  animation: colorChange 6s infinite;
+  animation: colorChange 5s infinite;
 }
 
 @keyframes colorChange {
@@ -111,7 +111,7 @@ body {
     background-color: #ffebcc;
   }
   75% {
-    background-color: #cce7ff;
+    background-color: #bed8ef;
   }
   100% {
     background-color: #ffccf9;
@@ -190,12 +190,156 @@ body {
   height: auto;
 }
 
+/*Introduction*/
+
+.image-container {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+  padding: 20px;
+  width: 50vw;
+  max-width: 300px;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.foreground-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: auto;
+  z-index: 2;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+.image-container:hover .background-image {
+  transform: scale(1.15);
+}
+
+.image-container:hover .foreground-image {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
 .contact,
 .projects,
 .resume,
 .skills {
   padding: 10px;
   padding-left: 20px;
+}
+
+.introduction {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+.macbook-tab {
+  width: 80%;
+  max-width: 900px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.tab-header {
+  background-color: #e0e0e0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.tab-buttons {
+  display: flex;
+  gap: 8px;
+  margin-left: 10px;
+}
+
+.tab-buttons span {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.red-button {
+  background-color: #ff5f57;
+}
+
+.yellow-button {
+  background-color: #ffbd2e;
+}
+
+.green-button {
+  background-color: #28c940;
+}
+
+.tab-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.image-container {
+  flex: 1;
+  min-width: 150px;
+  max-width: 300px;
+  margin-right: 20px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.text-container {
+  flex: 2;
+  min-width: 200px;
+}
+
+.text-container h2 {
+  margin: 0 0 10px 0;
+}
+
+.text-container p {
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .tab-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .image-container {
+    margin: 0 0 20px 0;
+  }
+
+  .text-container {
+    margin: 0;
+  }
 }
 
 /*contact*/
@@ -254,4 +398,131 @@ body {
 
 #rendezvoo-project-header {
   background-color: #ccffcc;
+}
+
+/* Contact */
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  gap: 20px;
+}
+
+.contact-card,
+.contact-form-card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-card .card-image,
+.contact-form-card .card-image {
+  width: auto; /* Adjust width to fit the image */
+  height: auto; /* Maintain the aspect ratio */
+  margin-bottom: 15px;
+}
+.contact-card .card-image img,
+.contact-form-card .card-image img {
+  max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 15px;
+}
+
+.card-content {
+  width: 100%;
+}
+
+.contact-card h2,
+.contact-form-card h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact-card p,
+.contact-form-card p {
+  margin: 0;
+}
+
+.contact-card a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+.contact-form-card {
+  background-color: #f0f8ff; /* Slightly different background color for the form */
+  width: 350px; /* A bit wider than other cards */
+  text-align: left;
+}
+
+.contact-form-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-card label {
+  margin: 10px 0 5px;
+  text-align: left;
+  color: #666;
+}
+
+.contact-form-card input[type="text"],
+.contact-form-card input[type="email"],
+.contact-form-card textarea {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+.contact-form-card input[type="submit"] {
+  background-color: #0073e6;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.contact-form-card input[type="submit"]:hover {
+  background-color: #005bb5;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-card,
+  .contact-form-card {
+    width: 90%;
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .contact-card .card-image img {
+    width: 40%;
+    margin-bottom: 0;
+  }
+
+  .card-content {
+    width: 60%;
+    padding-left: 10px;
+  }
+
+  .contact-form-card {
+    width: 95%;
+  }
 }
