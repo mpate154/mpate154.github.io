@@ -10,6 +10,7 @@
     </style>
   </head>
   <body>
+    <!---First navbar-->
     <nav class="navbar">
       <a href="index.html" class="navbar-brand">Maya Patel</a>
       <ul class="navbar-links">
@@ -20,18 +21,44 @@
       </ul>
     </nav>
 
-    <section class="projects">
+    <!-- Second navbar-->
+    <section class="secondary-navbar">
+      <ul class="tab-links">
+        <li>
+          <a
+            href="#technical"
+            class="tab-link active"
+            onclick="showTabContent(event, 'technical')"
+            >Technical</a
+          >
+        </li>
+        <li>
+          <a
+            href="#writing-and-design"
+            class="tab-link"
+            onclick="showTabContent(event, 'writing-and-design')"
+            >Writing and Design</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <!--Technical Projects-->
+    <section id="technical" class="tab-content">
       <div class="project-card">
+        <!-- Add your technical projects here -->
         <div id="axle-project-header" class="project-header">
           <span>
             <h2>Axle LLM Dashboard Conversion</h2>
           </span>
-          <span class="github-icon"
-            ><a href="https://github.com/mpate154"
-              ><img
+          <span class="github-icon">
+            <a href="https://github.com/mpate154">
+              <img
                 src="/images/github.png"
-                alt="Redirects to axle project on Maya's github" /></a
-          ></span>
+                alt="Redirects to axle project on Maya's github"
+              />
+            </a>
+          </span>
         </div>
         <p>
           Ongoing project with Axle through Cornell's Break Through Tech
@@ -78,6 +105,47 @@
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure est
           nemo animi doloremque magnam consequatur molestias esse aliquam
           accusamus nulla!
+        </p>
+      </div>
+    </section>
+
+    <!--Writing and Design Projects-->
+    <section id="writing-and-design" class="tab-content" style="display: none">
+      <div class="project-card">
+        <div id="hostile-project-header" class="project-header">
+          <span>
+            <h2>Hostile Architecture</h2>
+          </span>
+          <!--change github icon to project icon for all-->
+          <span class="github-icon"
+            ><a
+              href="https://docs.google.com/presentation/d/11sC_NADO5NQseYmgw2u1GPBeqStKU5OZ0tJzQSTPvi8/edit?usp=sharing"
+              ><img
+                src="/images/Slides.png"
+                alt="Redirects to final slides presentation project on hostile architecture on Maya's google slides" /></a
+          ></span>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut
+          lectus at enim egestas efficitur.
+        </p>
+      </div>
+      <div class="project-card">
+        <div id="big-bang-project-header" class="project-header">
+          <span>
+            <h2>The Big Bang is Kinda Broken</h2>
+          </span>
+          <span class="github-icon"
+            ><a
+              href="https://docs.google.com/presentation/d/1UeXDBy0INnBacRervfj3Gqg9Rtkb51Tu8V_R0-6iZos/edit?usp=sharing"
+              ><img
+                src="/images/Slides.png"
+                alt="Redirects to final slides presentation project on Maya's google slides" /></a
+          ></span>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut
+          lectus at enim egestas efficitur.
         </p>
       </div>
     </section>
