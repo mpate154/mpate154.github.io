@@ -355,7 +355,7 @@ body {
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  margin: 20px;
+  margin: 20px 40px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   /*display: flex; changes format to title on left of box and writing on right*/
 }
@@ -438,13 +438,6 @@ body {
 }
 
 /* Make sure the cards and the content inside scale with the viewport */
-.project-card {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 10px 20px;
-  margin: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
 /* Ensure responsive layout for the tab content */
 @media (max-width: 768px) {
@@ -460,6 +453,16 @@ body {
   .tab-content {
     padding: 10px;
   }
+}
+
+.slides-container iframe {
+  width: 100%;
+  height: 500px; /* Adjust height as needed */
+  border: none;
+}
+
+.slides-container {
+  margin-top: 10px; /* Space between description and slides */
 }
 
 /* Contact */
