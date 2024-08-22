@@ -385,7 +385,8 @@ body {
 }
 
 #axle-project-header,
-#mava-project-header {
+#mava-project-header,
+#generator-project-header {
   background-color: #ffccf9;
 }
 
