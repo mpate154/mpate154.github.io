@@ -261,7 +261,7 @@ body {
 }
 
 .tab-header {
-  background-color: #e0e0e0;
+  background-color: #f4eded;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -282,15 +282,15 @@ body {
 }
 
 .red-button {
-  background-color: #ff5f57;
+  background-color: #f4a29e;
 }
 
 .yellow-button {
-  background-color: #ffbd2e;
+  background-color: #efdbaf;
 }
 
 .green-button {
-  background-color: #28c940;
+  background-color: #a8e9b2;
 }
 
 .tab-content {
