@@ -469,6 +469,57 @@ body {
   margin-top: 10px; /* Space between description and slides */
 }
 
+/* Education */
+.education-section {
+  padding: 20px;
+}
+
+.education-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.course-list h3 {
+  cursor: pointer;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: 600;
+}
+
+.course-details {
+  display: none;
+  padding-left: 20px;
+  color: #555;
+}
+
+.course-title {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.course-title .arrow {
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.course-title .fa-chevron-down {
+  transition: transform 0.3s ease;
+}
+
+.course-title.active .fa-chevron-down {
+  transform: rotate(180deg);
+}
+
+/* If using Font Awesome */
+.course-title i {
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
 /* Contact */
 .contact-section {
   display: flex;

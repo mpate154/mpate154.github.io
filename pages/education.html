@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education - Maya Patel</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap");
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="navbar-brand">Maya Patel</a>
+      <ul class="navbar-links">
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="education-section">
+      <div class="education-card">
+        <h2>Stevens Institute of Technology</h2>
+        <p>Bachelor of Science in Computer Science</p>
+        <div class="course-list">
+          <h3 onclick="toggleDetails('course1')" class="course-title">
+            Data Structures <i class="fas fa-chevron-down"></i>
+          </h3>
+          <div id="course1" class="course-details">
+            <p>
+              Learned advanced data structures such as trees, graphs, and hash
+              tables. Implemented these structures in C++.
+            </p>
+          </div>
+        </div>
+        <div class="course-list">
+          <h3 onclick="toggleDetails('course2')" class="course-title">
+            Operating Systems <i class="fas fa-chevron-down"></i>
+          </h3>
+          <div id="course2" class="course-details">
+            <p>
+              Explored OS concepts including process scheduling, memory
+              management, and file systems. Created a basic shell in C.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="education-card">
+        <h2>Cornell's Break Through Tech</h2>
+        <p>Program in Large Language Models</p>
+        <div class="course-list">
+          <h3 onclick="toggleDetails('course3')" class="course-title">
+            Machine Learning Basics <i class="fas fa-chevron-down"></i>
+          </h3>
+          <div id="course3" class="course-details">
+            <p>
+              Introduction to machine learning algorithms and their applications
+              in natural language processing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="/script.js"></script>
+  </body>
+</html>
