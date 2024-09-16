@@ -1,18 +1,1 @@
-title: Maya Patel's Portfolio
-   description: Personal portfolio website of Maya Patel
-   baseurl: "/contact-form/public/pages/"
-   url: "https://mpate154.github.io"
-
-   # Build settings
-   markdown: kramdown
-   theme: minima  # or your chosen theme
-
-   # Exclude files from processing
-   exclude:
-     - Gemfile
-     - Gemfile.lock
-     - node_modules
-     - vendor/bundle/
-     - vendor/cache/
-     - vendor/gems/
-     - vendor/ruby/
+baseurl: "/contact-form/public/pages/"
